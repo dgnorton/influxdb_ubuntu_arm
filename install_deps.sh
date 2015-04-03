@@ -7,7 +7,7 @@ set -e
 apt-get update && apt-get install -y git mercurial bzr
 
 # download Dave Cheney's (unofficial) ARM build of golang compiler / tools
-curl -o go.tar.gz http://dave.cheney.net/paste/go1.4.2.linux-arm~armv5-1.tar.gz
+curl -o go.tar.gz http://dave.cheney.net/paste/go1.4.linux-arm~multiarch-armv7-1.tar.gz
 
 # install golang
 tar -C /usr/local -xzf go.tar.gz
