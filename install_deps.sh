@@ -16,5 +16,3 @@ tar -C /usr/local -xzf go.tar.gz
 printf "\n" >> $HOME/.bashrc
 printf "export PATH=$PATH:/usr/local/go/bin\n" >> $HOME/.bashrc
 printf "export GOPATH=$HOME/go\n" >> $HOME/.bashrc
-
-source . $HOME/.bashrc
