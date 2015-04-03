@@ -12,6 +12,9 @@ curl -o go.tar.gz http://dave.cheney.net/paste/go1.4.2.linux-arm~armv5-1.tar.gz
 # install golang
 tar -C /usr/local -xzf go.tar.gz
 
+# make dirs for golang workspace
+mkdir -p go/bin go/pkg go/src
+
 # add environment vars for golang
 printf "\n" >> $HOME/.bashrc
 printf "export PATH=$PATH:/usr/local/go/bin\n" >> $HOME/.bashrc
